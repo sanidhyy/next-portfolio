@@ -43,7 +43,7 @@ export const FloatingNav = ({
 
   return (
     <AnimatePresence mode="wait">
-      <motion.div
+      <motion.nav
         initial={{
           opacity: 1,
           y: -100,
@@ -72,7 +72,7 @@ export const FloatingNav = ({
             <span className="hidden sm:block text-sm">{navItem.name}</span>
           </Link>
         ))}
-      </motion.div>
+      </motion.nav>
     </AnimatePresence>
   );
 };
