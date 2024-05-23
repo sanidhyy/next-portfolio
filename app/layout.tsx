@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import type { PropsWithChildren } from "react";
 
-import { links } from "@/config";
+import { siteConfig } from "@/config";
 
 import { ThemeProvider } from "./provider";
 
@@ -10,10 +10,12 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: `${links.ownerName}'s Portfolio`,
-  description: "Modenr & Minimalist Next.js Portfolio",
+export const viewport: Viewport = {
+  themeColor: "#000319",
+  colorScheme: "dark",
 };
+
+export const metadata: Metadata = siteConfig;
 
 const RootLayout = ({ children }: Readonly<PropsWithChildren>) => {
   return (
