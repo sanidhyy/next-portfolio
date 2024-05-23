@@ -1,6 +1,6 @@
 {
   "name": "next-portfolio",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,6 +8,72 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "author": {
+    "name": "Sanidhya Kumar Verma",
+    "email": "sanidhya.verma12345@gmail.com",
+    "url": "https://github.com/sanidhyy"
+  },
+  "description": "Modern & Minimalist Next.js Portfolio.",
+  "keywords": [
+    "reactjs",
+    "nextjs",
+    "vercel",
+    "react",
+    "aceternity",
+    "aceternity-ui",
+    "shadcn",
+    "shadcn-ui",
+    "radix-ui",
+    "cn",
+    "clsx",
+    "modern-portfolio",
+    "portfolio",
+    "3d-portfolio",
+    "animated-portfolio",
+    "nextjs-portfolio",
+    "react-portfolio",
+    "react-three-fiber",
+    "three.js",
+    "animated-website",
+    "framer",
+    "framer-motion",
+    "three",
+    "react-icons",
+    "lucide-react",
+    "next-themes",
+    "postcss",
+    "prettier",
+    "react-dom",
+    "tailwindcss",
+    "tailwindcss-animate",
+    "ui/ux",
+    "js",
+    "javascript",
+    "typescript",
+    "eslint",
+    "html",
+    "css"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanidhyy/next-portfolio.git"
+  },
+  "homepage": "https://github.com/sanidhyy/next-portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/sanidhyy/next-portfolio/issues",
+    "email": "sanidhya.verma12345@gmail.com"
+  },
+  "funding": [
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/sanidhy"
+    },
+    {
+      "type": "Buy me a coffee",
+      "url": "https://www.buymeacoffee.com/sanidhy"
+    }
+  ],
   "dependencies": {
     "@react-three/drei": "^9.105.6",
     "@react-three/fiber": "^8.16.6",
