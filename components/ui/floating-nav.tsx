@@ -9,13 +9,11 @@ import {
 import Link from "next/link";
 import { useState } from "react";
 
+import { navItems } from "@/data";
 import { cn } from "@/lib/utils";
 
 type FloatingNavProps = {
-  navItems: {
-    name: string;
-    link: string;
-  }[];
+  navItems: typeof navItems;
   className?: string;
 };
 

@@ -3,7 +3,7 @@ export const navItems = [
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
-];
+] as const;
 
 export const gridItems = [
   {
@@ -67,7 +67,7 @@ export const gridItems = [
     img: "",
     spareImg: "",
   },
-];
+] as const;
 
 export const projects = [
   {
@@ -102,7 +102,7 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://github.com/sanidhyy/apple-clone",
   },
-];
+] as const;
 
 export const testimonials = [
   {
@@ -135,7 +135,7 @@ export const testimonials = [
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
-];
+] as const;
 
 export const companies = [
   {
@@ -168,7 +168,7 @@ export const companies = [
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
   },
-];
+] as const;
 
 export const workExperience = [
   {
@@ -199,7 +199,7 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
-];
+] as const;
 
 export const socialMedia = [
   {
@@ -217,4 +217,9 @@ export const socialMedia = [
     img: "/link.svg",
     link: "https://www.linkedin.com/in/sanidhyy",
   },
-];
+] as const;
+
+export const techStack = {
+  stack1: ["React.js", "Next.js", "Typescript"],
+  stack2: ["Vue.js", "AWS", "MongoDB"],
+};

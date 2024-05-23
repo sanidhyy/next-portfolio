@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 type MagicButtonProps = {
   title: string;
   icon?: React.ReactNode;
-  position?: string;
+  position?: "left" | "right";
   handleClick?: () => void;
   otherClasses?: string;
   asChild?: boolean;

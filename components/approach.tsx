@@ -15,7 +15,7 @@ export const Approach = () => {
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card
           title="Planning & Strategy"
-          icon={<MagicButton title="Phase 1" />}
+          icon={<MagicButton title="Phase 1" asChild />}
           description="We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements."
         >
           <CanvasRevealEffect
@@ -26,7 +26,7 @@ export const Approach = () => {
 
         <Card
           title="Deployment & Progress Update"
-          icon={<MagicButton title="Phase 2" />}
+          icon={<MagicButton title="Phase 2" asChild />}
           description="Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way."
         >
           <CanvasRevealEffect
@@ -42,7 +42,7 @@ export const Approach = () => {
 
         <Card
           title="Development & Launch"
-          icon={<MagicButton title="Phase 3" />}
+          icon={<MagicButton title="Phase 3" asChild />}
           description="This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up."
         >
           <CanvasRevealEffect

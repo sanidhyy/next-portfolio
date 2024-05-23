@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { MagicButton } from "@/components/ui/magic-button";
+import { links } from "@/config";
 import { socialMedia } from "@/data";
 
 export const Footer = () => {
@@ -30,7 +31,7 @@ export const Footer = () => {
         </p>
 
         <Link
-          href="mailto:sanidhya.verma12345@gmail.com"
+          href={`mailto:${links.ownerEmail}`}
           target="_blank"
           rel="noreferrer noopener"
           className="md:mt-10"
