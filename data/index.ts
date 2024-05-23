@@ -223,4 +223,4 @@ export const socialMedia = [
 export const techStack = {
   stack1: ["React.js", "Next.js", "Typescript"],
   stack2: ["Vue.js", "AWS", "MongoDB"],
-};
+} as const;
