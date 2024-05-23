@@ -98,7 +98,9 @@
     "@types/react-lottie": "^1.2.10",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
+    "eslint-plugin-unused-imports": "^3.2.0",
     "postcss": "^8",
+    "prettier-plugin-tailwindcss": "^0.5.14",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
