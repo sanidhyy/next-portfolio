@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import {
   AnimatePresence,
   motion,
@@ -8,6 +7,7 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import Link from "next/link";
+import { useState } from "react";
 
 import { cn } from "@/lib/utils";
 

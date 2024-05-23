@@ -1,13 +1,14 @@
+import Link from "next/link";
+import { FaLocationArrow } from "react-icons/fa6";
+
 import { Spotlight } from "@/components/ui/spotlight";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { MagicButton } from "@/components/ui/magic-button";
-import { FaLocationArrow } from "react-icons/fa6";
-import Link from "next/link";
 
 export const Hero = () => {
   return (
     <div className="pb-20 pt-36">
-      <div className="">
+      <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
           fill="white"
@@ -38,11 +39,12 @@ export const Hero = () => {
             Hi, I&apos;m Sanidhya, a Next.js developer based in India.
           </p>
 
-          <Link href="#about">
+          <Link href="#about" className="md:mt-10">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
               position="right"
+              asChild
             />
           </Link>
         </div>
