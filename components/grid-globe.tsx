@@ -1,13 +1,12 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
+
 import dynamic from "next/dynamic";
 
 const World = dynamic(() => import("./ui/globe").then((m) => m.World), {
   ssr: false,
 });
 
-export function GridGlobe() {
+export const GridGlobe = () => {
   const globeConfig = {
     pointSize: 4,
     globeColor: "#062056",
@@ -404,4 +403,4 @@ export function GridGlobe() {
       </div>
     </div>
   );
-}
+};

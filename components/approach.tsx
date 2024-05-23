@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
+
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
-import { MagicButton } from "./ui/magic-button";
+import { MagicButton } from "@/components/ui/magic-button";
 
 export const Approach = () => {
   return (
@@ -56,23 +57,21 @@ export const Approach = () => {
   );
 };
 
-const Card = ({
-  title,
-  description,
-  icon,
-  children,
-}: {
+type CardProps = {
   title: string;
   description: string;
   icon: React.ReactNode;
   children?: React.ReactNode;
-}) => {
-  const [hovered, setHovered] = React.useState(false);
+};
+
+const Card = ({ title, description, icon, children }: CardProps) => {
+  const [hovered, setHovered] = useState(false);
+
   return (
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] rounded-3xl"
+      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2] max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] rounded-3xl"
     >
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
@@ -113,7 +112,7 @@ const Card = ({
   );
 };
 
-export const Icon = ({ className, ...rest }: any) => {
+export const Icon = ({ className, ...props }: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +121,7 @@ export const Icon = ({ className, ...rest }: any) => {
       strokeWidth="1.5"
       stroke="currentColor"
       className={className}
-      {...rest}
+      {...props}
     >
       <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
     </svg>

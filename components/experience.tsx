@@ -1,6 +1,7 @@
-import { workExperience } from "@/data";
-import { Button } from "@/components/ui/moving-borders";
 import Image from "next/image";
+
+import { Button } from "@/components/ui/moving-borders";
+import { workExperience } from "@/data";
 
 export const Experience = () => {
   return (
