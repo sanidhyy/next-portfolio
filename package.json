@@ -11,10 +11,12 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.6",
+    "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "tailwind-merge": "^2.3.0"
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "typescript": "^5",
