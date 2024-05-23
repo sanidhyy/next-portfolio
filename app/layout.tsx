@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import type { PropsWithChildren } from "react";
 
+import { links } from "@/config";
+
 import { ThemeProvider } from "./provider";
 
 import "./globals.css";
@@ -9,7 +11,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sanidhya's Portfolio",
+  title: `${links.ownerName}'s Portfolio`,
   description: "Modenr & Minimalist Next.js Portfolio",
 };
 

@@ -4,6 +4,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { Spotlight } from "@/components/ui/spotlight";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { MagicButton } from "@/components/ui/magic-button";
+import { links } from "@/config";
 
 export const Hero = () => {
   return (
@@ -36,7 +37,7 @@ export const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Sanidhya, a Next.js developer based in India.
+            Hi, I&apos;m {links.ownerName}, a Next.js developer based in India.
           </p>
 
           <Link href="#about" className="md:mt-10">
