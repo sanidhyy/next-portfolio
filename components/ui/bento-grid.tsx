@@ -57,7 +57,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative group/bento rounded-3xl hover:shadow-xl transition duration-200 shadow-input dark:shadow-none border border-white/[0.1] overflow-hidden relative justify-between flex flex-col space-y-4",
+        "row-span-1 group/bento rounded-3xl hover:shadow-xl transition duration-200 shadow-input dark:shadow-none border border-white/[0.1] overflow-hidden relative justify-between flex flex-col space-y-4",
         className
       )}
       style={{
@@ -66,7 +66,7 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
-      <div className={`${id === 6 && "flex justify-center"} h-full`}>
+      <div className={cn("h-full", id === 6 && "flex justify-center")}>
         <div className="w-full h-full absolute">
           {img && (
             <img
@@ -78,9 +78,10 @@ export const BentoGridItem = ({
         </div>
 
         <div
-          className={`absolute right-0 -mb-5 ${
+          className={cn(
+            "absolute right-0 -mb-5",
             id === 5 && "w-full opacity-80"
-          }`}
+          )}
         >
           {spareImg && (
             <img
@@ -140,7 +141,7 @@ export const BentoGridItem = ({
 
           {id === 6 && (
             <div className="mt-5 relative">
-              <div className={`absolute -bottom-5 right-0`}>
+              <div className="absolute -bottom-5 right-0">
                 <Lottie
                   options={{
                     loop: copied,
