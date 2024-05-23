@@ -10,10 +10,10 @@ import { navItems } from "@/data";
 
 const MainPage = () => {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
+    <main className="relative mx-auto flex flex-col items-center justify-center overflow-clip bg-black-100 px-5 sm:px-10">
       <FloatingNav navItems={navItems} />
 
-      <div className="max-w-7xl w-full">
+      <div className="w-full max-w-7xl">
         <Hero />
         <Grid />
         <RecentProjects />

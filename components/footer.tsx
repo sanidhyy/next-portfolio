@@ -8,8 +8,8 @@ import { socialMedia } from "@/data";
 
 export const Footer = () => {
   return (
-    <footer id="contact" className="w-full pb-10 mb-[100px] md:mb-auto">
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
+    <footer id="contact" className="mb-[100px] w-full pb-10 md:mb-auto">
+      <div className="absolute -bottom-72 left-0 min-h-96 w-full">
         <Image
           src="/footer-grid.svg"
           alt="grid"
@@ -25,7 +25,7 @@ export const Footer = () => {
           presence to the next level?
         </h1>
 
-        <p className="text-white-200 md:mt-10 my-5 text-center">
+        <p className="my-5 text-center text-white-200 md:mt-10">
           Reach out to me today and let&apos;s discuss how I can help your
           achieve your goals.
         </p>
@@ -45,8 +45,8 @@ export const Footer = () => {
         </Link>
       </div>
 
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center relative z-[999]">
-        <p className="md:text-base text-sm md:font-normal font-light">
+      <div className="relative z-[999] mt-16 flex flex-col items-center justify-between md:flex-row">
+        <p className="text-sm font-light md:text-base md:font-normal">
           Copyright &copy; {new Date().getFullYear()}{" "}
           <Link
             href="https://sanidhy.me"
@@ -62,14 +62,14 @@ export const Footer = () => {
           </Link>
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center gap-6 md:gap-3">
           {socialMedia.map((profile) => (
             <Link
               key={profile.name}
               href={profile.link}
               target="_blank"
               rel="noreferrer noopener"
-              className="size-10 flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+              className="saturate-180 flex size-10 items-center justify-center rounded-lg border border-black-300 bg-black-200 bg-opacity-75 backdrop-blur-lg backdrop-filter"
               title={profile.name}
             >
               <Image

@@ -68,7 +68,7 @@
 
 @layer base {
   * {
-    @apply border-border !scroll-smooth;
+    @apply !scroll-smooth border-border;
   }
   body {
     @apply bg-background text-foreground;
@@ -80,7 +80,7 @@
 
 @layer utilities {
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+    @apply text-center text-4xl font-bold md:text-5xl;
   }
 
   .black-gradient {

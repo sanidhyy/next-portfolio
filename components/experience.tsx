@@ -10,28 +10,28 @@ export const Experience = () => {
         My <span className="text-purple">work experience</span>
       </h1>
 
-      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+      <div className="mt-12 grid w-full grid-cols-1 gap-10 lg:grid-cols-4">
         {workExperience.map((experience) => (
           <Button
             key={experience.id}
             borderRadius="1.75rem"
-            className="flex-1 text-white border-neutral-200 dark:border-slate-800"
+            className="flex-1 border-neutral-200 text-white dark:border-slate-800"
             duration={Math.floor(Math.random() * 10000 + 10000)}
           >
-            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+            <div className="flex flex-col gap-2 p-3 py-6 md:p-5 lg:flex-row lg:items-center lg:p-10">
               <Image
                 width={95}
                 height={87}
                 src={experience.thumbnail}
                 alt={experience.title}
-                className="lg:w-32 md:w-20 w-16"
+                className="w-16 md:w-20 lg:w-32"
               />
 
               <div className="lg:ms-5">
-                <h1 className="text-start text-xl md:text-2xl font-bold">
+                <h1 className="text-start text-xl font-bold md:text-2xl">
                   {experience.title}
                 </h1>
-                <p className="text-start text-white-100 mt-3 font-semibold">
+                <p className="mt-3 text-start font-semibold text-white-100">
                   {experience.desc}
                 </p>
               </div>

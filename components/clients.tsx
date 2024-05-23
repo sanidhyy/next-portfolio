@@ -11,7 +11,7 @@ export const Clients = () => {
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">
-        <div className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden">
+        <div className="relative flex h-[50vh] flex-col items-center justify-center  overflow-hidden rounded-md antialiased md:h-[30rem]">
           <InfiniteMovingCards
             items={testimonials}
             direction="right"
@@ -19,15 +19,15 @@ export const Clients = () => {
           />
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
+        <div className="flex flex-wrap items-center justify-center gap-4 max-lg:mt-10 md:gap-16">
           {companies.map(({ id, img, name, nameImg }) => (
-            <div key={id} className="flex md:max-w-60 max-w-32 gap-2">
+            <div key={id} className="flex max-w-32 gap-2 md:max-w-60">
               <Image
                 height={29}
                 width={43}
                 src={img}
                 alt={`${name}'s logo`}
-                className="md:w-10 w-5"
+                className="w-5 md:w-10"
               />
 
               <Image
@@ -35,7 +35,7 @@ export const Clients = () => {
                 width={131}
                 src={nameImg}
                 alt={name}
-                className="md:w-24 w-20"
+                className="w-20 md:w-24"
               />
             </div>
           ))}

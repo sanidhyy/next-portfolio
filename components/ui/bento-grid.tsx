@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
 
@@ -25,7 +25,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-5 gap-8 max-w-7xl mx-auto",
+        "mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-5",
         className
       )}
     >
@@ -73,7 +73,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 group/bento rounded-3xl hover:shadow-xl transition duration-200 shadow-input dark:shadow-none border border-white/[0.1] overflow-hidden relative justify-between flex flex-col space-y-4",
+        "group/bento relative row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-3xl border border-white/[0.1] shadow-input transition duration-200 hover:shadow-xl dark:shadow-none",
         className
       )}
       style={{
@@ -83,7 +83,7 @@ export const BentoGridItem = ({
       }}
     >
       <div className={cn("h-full", id === 6 && "flex justify-center")}>
-        <div className="w-full h-full absolute">
+        <div className="absolute h-full w-full">
           {img && (
             <Image
               width={689}
@@ -107,7 +107,7 @@ export const BentoGridItem = ({
               height={96}
               src={spareImg}
               alt={spareImg}
-              className="object-cover object-center w-full h-full"
+              className="h-full w-full object-cover object-center"
             />
           )}
         </div>
@@ -116,41 +116,41 @@ export const BentoGridItem = ({
 
         <div
           className={cn(
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10",
+            "relative flex min-h-40 flex-col p-5 px-5 transition duration-200 group-hover/bento:translate-x-2 md:h-full lg:p-10",
             titleClassName
           )}
         >
-          <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
+          <div className="z-10 font-sans text-sm font-extralight text-[#c1c2d3] md:text-xs lg:text-base">
             {description}
           </div>
 
-          <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
+          <div className="z-10 max-w-96 font-sans text-lg font-bold lg:text-3xl">
             {title}
           </div>
 
           {id === 2 && <GridGlobe />}
 
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="absolute -right-3 flex w-fit gap-1 lg:-right-2 lg:gap-5">
               <div className="flex flex-col gap-3 lg:gap-8">
                 {techStack.stack1.map((item) => (
                   <span
                     key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
+                    className="rounded-lg bg-[#10132e] px-3 py-2 text-center text-xs opacity-50 lg:px-3 lg:py-4 lg:text-base lg:opacity-100"
                   >
                     {item}
                   </span>
                 ))}
 
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
+                <span className="rounded-lg bg-[#10132e] px-3 py-4 text-center" />
               </div>
 
               <div className="flex flex-col gap-3 lg:gap-8">
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
+                <span className="rounded-lg bg-[#10132e] px-3 py-4 text-center" />
                 {techStack.stack2.map((item) => (
                   <span
                     key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
+                    className="rounded-lg bg-[#10132e] px-3 py-2 text-center text-xs opacity-50 lg:px-3 lg:py-4 lg:text-base lg:opacity-100"
                   >
                     {item}
                   </span>
@@ -160,10 +160,10 @@ export const BentoGridItem = ({
           )}
 
           {id === 6 && (
-            <div className="group mt-5 relative">
+            <div className="group relative mt-5">
               <button
                 tabIndex={-1}
-                className="absolute -bottom-5 right-0 pointer-events-none cursor-default"
+                className="pointer-events-none absolute -bottom-5 right-0 cursor-default"
               >
                 <Lottie
                   options={{
