@@ -2,15 +2,18 @@ import { socialMedia } from "@/data";
 import Link from "next/link";
 import { FaLocationArrow } from "react-icons/fa6";
 import { MagicButton } from "./ui/magic-button";
+import Image from "next/image";
 
 export const Footer = () => {
   return (
     <footer id="contact" className="w-full pb-10 mb-[100px] md:mb-auto">
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <img
+        <Image
           src="/footer-grid.svg"
           alt="grid"
           className="h-full w-full opacity-50"
+          width={1260}
+          height={863}
         />
       </div>
 
@@ -52,7 +55,7 @@ export const Footer = () => {
               rel="noreferrer noopener"
               className="size-10 flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
-              <img
+              <Image
                 src={profile.img}
                 alt={`profile-${profile.id}`}
                 width={20}
