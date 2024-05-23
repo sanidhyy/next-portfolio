@@ -25,7 +25,11 @@ export const Footer = () => {
           achieve your goals.
         </p>
 
-        <Link href="mailto:contact@jsmastery.pro">
+        <Link
+          href="mailto:sanidhya.verma12345@gmail.com"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
