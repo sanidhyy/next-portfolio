@@ -234,7 +234,7 @@ export const Globe = ({ globeConfig, data }: WorldProps) => {
   );
 };
 
-export function WebGLRendererConfig() {
+export const WebGLRendererConfig = () => {
   const { gl, size } = useThree();
 
   useEffect(() => {
@@ -244,9 +244,9 @@ export function WebGLRendererConfig() {
   }, [gl, size.height, size.width]);
 
   return null;
-}
+};
 
-export function World(props: WorldProps) {
+export const World = (props: WorldProps) => {
   const { globeConfig } = props;
   const scene = new Scene();
   scene.fog = new Fog(0xffffff, 400, 2000);
@@ -280,11 +280,11 @@ export function World(props: WorldProps) {
       />
     </Canvas>
   );
-}
+};
 
-export function hexToRgb(hex: string) {
+export const hexToRgb = (hex: string) => {
   var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
-  hex = hex.replace(shorthandRegex, function (m, r, g, b) {
+  hex = hex.replace(shorthandRegex, (m, r, g, b) => {
     return r + r + g + g + b + b;
   });
 
@@ -296,9 +296,9 @@ export function hexToRgb(hex: string) {
         b: parseInt(result[3], 16),
       }
     : null;
-}
+};
 
-export function genRandomNumbers(min: number, max: number, count: number) {
+export const genRandomNumbers = (min: number, max: number, count: number) => {
   const arr = [];
   while (arr.length < count) {
     const r = Math.floor(Math.random() * (max - min)) + min;
@@ -306,4 +306,4 @@ export function genRandomNumbers(min: number, max: number, count: number) {
   }
 
   return arr;
-}
+};

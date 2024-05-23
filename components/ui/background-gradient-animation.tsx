@@ -72,7 +72,7 @@ export const BackgroundGradientAnimation = ({
   ]);
 
   useEffect(() => {
-    function move() {
+    const move = () => {
       if (!interactiveRef.current) {
         return;
       }
@@ -81,7 +81,7 @@ export const BackgroundGradientAnimation = ({
       interactiveRef.current.style.transform = `translate(${Math.round(
         curX
       )}px, ${Math.round(curY)}px)`;
-    }
+    };
 
     move();
   }, [curX, curY, tgX, tgY]);
