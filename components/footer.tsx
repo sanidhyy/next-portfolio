@@ -1,8 +1,9 @@
-import { socialMedia } from "@/data";
+import Image from "next/image";
 import Link from "next/link";
 import { FaLocationArrow } from "react-icons/fa6";
-import { MagicButton } from "./ui/magic-button";
-import Image from "next/image";
+
+import { MagicButton } from "@/components/ui/magic-button";
+import { socialMedia } from "@/data";
 
 export const Footer = () => {
   return (
@@ -32,18 +33,28 @@ export const Footer = () => {
           href="mailto:sanidhya.verma12345@gmail.com"
           target="_blank"
           rel="noreferrer noopener"
+          className="md:mt-10"
         >
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
             position="right"
+            asChild
           />
         </Link>
       </div>
 
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="flex mt-16 md:flex-row flex-col justify-between items-center relative z-[999]">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright &copy; 2024 Sanidhya
+          Copyright &copy; {new Date().getFullYear()}{" "}
+          <Link
+            href="https://sanidhy.me"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="text-purple"
+          >
+            Sanidhya
+          </Link>
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
