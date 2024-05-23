@@ -1,6 +1,7 @@
 import { Grid } from "@/components/grid";
 import { Hero } from "@/components/hero";
 import { FloatingNav } from "@/components/ui/floating-nav";
+import { RecentProjects } from "@/components/ui/recent-projects";
 import { FaHome } from "react-icons/fa";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         />
         <Hero />
         <Grid />
+        <RecentProjects />
       </div>
     </main>
   );
