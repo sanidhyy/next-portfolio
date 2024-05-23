@@ -55,21 +55,26 @@ export const Footer = () => {
             className="text-purple"
           >
             Sanidhya
+          </Link>{" "}
+          |{" "}
+          <Link href={links.sourceCode} className="underline">
+            Source Code
           </Link>
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((profile) => (
             <Link
-              key={profile.id}
+              key={profile.name}
               href={profile.link}
               target="_blank"
               rel="noreferrer noopener"
               className="size-10 flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+              title={profile.name}
             >
               <Image
                 src={profile.img}
-                alt={`profile-${profile.id}`}
+                alt={`profile-${profile.name}`}
                 width={20}
                 height={20}
               />
