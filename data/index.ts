@@ -74,12 +74,12 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "FigPro - Collaborative Design Tool",
+    des: "A collaborative design tool with real-time collaboration, vector editing, and a responsive UI.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://example.com",
-    sourceCode: "https://github.com/sanidhyy?tab=repositories",
+    link: "https://clone-figmaa.netlify.app",
+    sourceCode: "https://github.com/sanidhyy/figma-clone",
   },
   {
     id: 2,
