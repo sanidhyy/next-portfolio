@@ -87,7 +87,7 @@ export const projects = [
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://example.com",
+    link: "https://clone-yoom.netlify.app",
     sourceCode: "https://github.com/sanidhyy/zoom-clone",
   },
   {
