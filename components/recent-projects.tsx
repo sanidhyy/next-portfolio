@@ -73,6 +73,8 @@ export const RecentProjects = () => {
                   <div className="flex items-center justify-center">
                     <Link
                       href={sourceCode}
+                      target="_blank"
+                      rel="noreferrer noopener"
                       className="flex text-sm text-purple md:text-xs lg:text-xl"
                     >
                       Source Code
