@@ -211,7 +211,7 @@ export const socialMedia = [
   {
     name: "Twitter",
     img: "/twit.svg",
-    link: "https://twitter.com/sanidhyyy",
+    link: "https://x.com/_sanidhyy",
   },
   {
     name: "LinkedIn",
