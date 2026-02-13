@@ -47,7 +47,7 @@ You might encounter some bugs while using this app. You are more than welcome to
 ## :rocket: Follow Me
 
 [![GitHub followers](https://img.shields.io/github/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://github.com/sanidhyy "Follow Me")
-[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fsanidhyyy)](https://twitter.com/intent/tweet?text=Wow:&url=https://github.com/sanidhyy/next-portfolio "Tweet")
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fx.com%2F_sanidhyy)](https://x.com/intent/tweet?text=Wow:&url=https://github.com/sanidhyy/next-portfolio "Tweet")
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@OPGAMER. "Subscribe my Channel")
 
 ## :books: Learn More
