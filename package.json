@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "author": {
     "name": "Sanidhya Kumar Verma",
@@ -76,14 +76,14 @@
   ],
   "dependencies": {
     "@react-three/drei": "^9.105.6",
-    "@react-three/fiber": "^8.16.6",
+    "@react-three/fiber": "^9.5.0",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.2.6",
+    "framer-motion": "^11.18.2",
     "mini-svg-data-uri": "^1.4.4",
-    "next": "14.2.35",
+    "next": "16.1.6",
     "next-themes": "^0.3.0",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
     "react-icons": "^5.2.1",
     "react-lottie": "^1.2.4",
     "tailwind-merge": "^2.3.0",
@@ -93,15 +93,19 @@
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
     "@types/react-lottie": "^1.2.10",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3",
-    "eslint-plugin-unused-imports": "^3.2.0",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "16.1.6",
+    "eslint-plugin-unused-imports": "^4.4.1",
     "postcss": "^8",
     "prettier-plugin-tailwindcss": "^0.5.14",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "overrides": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3"
   }
 }
