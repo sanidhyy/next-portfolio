@@ -96,7 +96,7 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "@types/react-lottie": "^1.2.10",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.0",
     "eslint-config-next": "16.1.6",
     "eslint-plugin-unused-imports": "^4.4.1",
     "postcss": "^8",
