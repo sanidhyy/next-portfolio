@@ -93,7 +93,7 @@
   },
   "devDependencies": {
     "@types/node": "^25",
-    "@types/react": "19.2.14",
+    "@types/react": "19.2.15",
     "@types/react-dom": "19.2.3",
     "@types/react-lottie": "^1.2.10",
     "eslint": "^10.0.0",
