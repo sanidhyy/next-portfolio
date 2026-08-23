@@ -18,6 +18,14 @@
 3. Open terminal in root directory. Run `npm install --legacy-peer-deps` or `yarn install --legacy-peer-deps`.
 4. Now app is fully configured :+1: and you can start using this app using `npm run dev` or `yarn dev`.
 
+### :raising_hand: Need Help?
+
+If you run into issues during installation or setup:
+
+- **GitHub Discussions** — [Open a Q&A discussion](https://github.com/sanidhyy/next-portfolio/discussions/new?category=q-a) for setup and troubleshooting help.
+- **Email** — [sanidhyyy@gmail.com](mailto:sanidhyyy@gmail.com)
+- **Discord** — `sanidhyy`
+
 ## :camera: Screenshots:
 
 ![Modern UI/UX](/.github/images/img1.png "Modern UI/UX")
