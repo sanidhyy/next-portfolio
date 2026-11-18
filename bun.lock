@@ -14,7 +14,7 @@
         "next-themes": "^0.4.6",
         "react": "19.3.1",
         "react-dom": "19.3.1",
-        "react-icons": "^5.2.1",
+        "react-icons": "^5.7.0",
         "react-lottie": "^2.5.0",
         "tailwind-merge": "^3.4.1",
         "tailwindcss-animate": "^1.0.7",
@@ -837,7 +837,7 @@
 
     "react-dom": ["react-dom@19.3.1", "", { "dependencies": { "scheduler": "^0.28.0" }, "peerDependencies": { "react": "^19.3.1" } }, "sha512-Y0bARz53lhEC1NMCASs0/j+faB/zqt3R8hpvg1e8+61ZVJ4UL0UdC4cBbXfZMcIuhrfgeILTLe+ZeBCavQPtKQ=="],
 
-    "react-icons": ["react-icons@5.2.1", "", { "peerDependencies": { "react": "*" } }, "sha512-zdbW5GstTzXaVKvGSyTaBalt7HSfuK5ovrzlpyiWHAFXndXTdd/1hdDHI4xBM1Mn7YriT6aqESucFl9kEXzrdw=="],
+    "react-icons": ["react-icons@5.7.0", "", { "peerDependencies": { "react": "*" } }, "sha512-LBLy340Rzqy6+/yVhZKT3B/QpP1BZaesGqasf09HPOBzRarcDIFH0WwXlXQfE7q7ipxK4MSiC5DIBWURCny6fw=="],
 
     "react-is": ["react-is@16.13.1", "", {}, "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="],
 
